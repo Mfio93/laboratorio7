@@ -1,0 +1,161 @@
+:root{
+    --color1:#05AFF2;
+    --color2:#f2f2f2;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#contenedor{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid grey;
+    padding: 5px;    
+}
+header{
+    height: 100px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5px; ;
+
+}
+header img{
+    height: 100px;
+}
+h3{
+    margin-right: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+nav{
+    height: 90px;
+    margin: 5px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+nav ul li {
+    min-width: 120px;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: #434343;
+}
+nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    display: none; /*ocultar los hijos del ul*/;
+}
+nav ul li:hover >ul{
+    display: block;
+}
+main{
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+
+}
+section {
+    width: 60%;
+    padding: 5px;
+}
+article{
+    width: 10px 0;
+}
+article img, aside img{
+    width: 90%;
+    margin: 10px 0;
+    border-radius:10px;
+    display: block;
+    margin:10px auto;
+}
+aside{
+    width: 30%;
+    padding: 5px;
+    font-size: 1em;
+}
+h4, h5{
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+h4{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+h5{
+    margin-top: 10px;
+}
+p{
+    margin-top: 10px;
+}
+article li{
+    padding: 5px 10px;
+
+}
+footer{
+    background-color: var(--color1);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer p{
+    padding: 2px;
+}
+footer i{
+    font-size: 1sem;
+}
+/*Estilos para las otras paginas*/
+#content{
+    width: 70%;
+    margin: 25px auto;
+    border: 1px solid grey;
+    padding: 10px;
+}
+#titulo{
+    background-color: #434343;
+    color: white;
+    font-size: 1.5em;
+    text-align:center;
+    padding: 10px;
+    margin: 10px;
+}
+#video-responsivo{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+iframe, video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#inicio{
+    text-align: center;
+    font-size: 1.2em;
+}
