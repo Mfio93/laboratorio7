@@ -1,7 +1,6 @@
 :root{
-    --color1:#0DD9C4;
-    --color2:#026873;
-    --color3:#4ED97F;
+    --color1:#05AFF2;
+    --color2:#f2f2f2;
 }
 *{
     margin:0;
@@ -10,29 +9,27 @@
     font-family: sans-serif;
 }
 #contenedor{
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     border: 1px solid grey;
     padding: 5px;    
-    background: url(img/trama-di-carta-bianca-sgualcita-per-sfondo.jpg);
 }
 header{
-    height: 150px;
+    height: 100px;
     background-color: var(--color1);
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin: 5px; 
+    margin: 5px; ;
+
 }
 header img{
-    height: 120px;
-    margin: 2px;
-    padding: 0px 0px 0px 40px; 
+    height: 100px;
 }
-h1{
+h3{
     margin-right: 20px;
-    padding: 0px 40px 0px 0px;
-    color:var(--color2);
+    color: white;
+    text-transform: uppercase;
 }
 nav{
     height: 90px;
@@ -48,13 +45,13 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
-    background-color: var(--color1);
-    color: var(--color2);
+    background-color: black;
+    color: white;
     padding: 5px 20px;
     display: block;
 }
 nav ul li a:hover{
-    background-color: #e0dada;
+    background-color: #434343;
 }
 nav ul li ul{
     display: flex;
@@ -70,6 +67,7 @@ main{
     text-align: justify;
     display: flex;
     justify-content: space-between;
+
 }
 section {
     width: 60%;
@@ -77,21 +75,13 @@ section {
 }
 article{
     width: 10px 0;
-
 }
-article img{
+article img, aside img{
     width: 90%;
     margin: 10px 0;
     border-radius:10px;
     display: block;
     margin:10px auto;
-}
-aside img{
-    width: 90%;
-    margin: 10px 0;
-    border-radius:15px;
-    display: block;
-    margin:20px auto;
 }
 aside{
     width: 30%;
@@ -104,10 +94,10 @@ h4, h5{
     padding: 5px 0;
 }
 h4{
-    background-color: var(--color2);
+    background-color: black;
     color: white;
-    padding: 15px 0;
-    
+    padding: 10px 0;
+    text-transform: capitalize;
 }
 h5{
     margin-top: 10px;
@@ -117,8 +107,7 @@ p{
 }
 article li{
     padding: 5px 10px;
-    list-style: none;
-    text-align:justify
+
 }
 footer{
     background-color: var(--color1);
@@ -126,7 +115,6 @@ footer{
     padding: 5px;
     text-align: center;
     color: white;
-    
 }
 footer a{
     color: white;
@@ -135,7 +123,7 @@ footer p{
     padding: 2px;
 }
 footer i{
-    font-size: 1em;
+    font-size: 1sem;
 }
 /*Estilos para las otras paginas*/
 #content{
@@ -145,7 +133,7 @@ footer i{
     padding: 10px;
 }
 #titulo{
-    background-color: var(--color2);
+    background-color: #434343;
     color: white;
     font-size: 1.5em;
     text-align:center;
@@ -169,5 +157,5 @@ iframe, video{
 }
 #inicio{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
